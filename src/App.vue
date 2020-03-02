@@ -1,8 +1,8 @@
 <template>
-  <div id="app" class="has-background-black-ter">
+  <div id="app" class="">
     <Navbar />
     <Services v-bind:skills="skill" />
-    <About v-bind:exps="experience" v-bind:voluntary="volunteryWorks" v-bind:award="awards"/>
+    <About v-bind:skills="skill" v-bind:exps="experience" v-bind:voluntary="volunteryWorks" v-bind:award="awards"/>
     <Portfolio />
     <Contact />
     <Footer />
@@ -26,28 +26,24 @@ export default {
     return {
       skill:[
         {
-          title:"Web Frontend",
-          details:"Html/Css/JS/ReactJS"
-        },
-        {
           title:"Web Backend",
-          details:"NodeJS, Python, REST API with Flask"
+          details:"NodeJS (Adonis.js), Python (Flask)"
         },
         {
           title:"Sys Admin",
           details:"Systems Troubleshooting, Linux, Network integration"
         },
         {
-          title:"DevRel/Support",
-          details:"Technical writing, Customer Success Manager, Content developer, Customer Support, Zendesk"
-        },
-        {
           title:"Cloud",
-          details:": GCP & Azure"
+          details:"Azure & GCP  "
         },
         {
           title:"Cloud Infrastructure",
           details:"Kubernetes, Rancher, Ansible"
+        },
+        {
+          title:"Google Developer Group Ajah (GDG AJAH)",
+          details:"Google IT Support Certification",
         },  
       ],
       experience:[
@@ -67,11 +63,6 @@ export default {
            title:"Trello Community Manager",
            role:"Lekki Trello Events ",
            timeSpan:"JAN .2020-Present  "
-        },
-        {
-           title:"Google Developer Group Ajah (GDG AJAH)",
-           role:"Google IT Support Certification",
-           timeSpan:"Present"
         },
         {
            title:"Google Developer Group Ajah (GDG AJAH)",
@@ -118,6 +109,9 @@ font-family: 'Spartan' ;
 }
 .sub-headings{
   text-align:left !important;
+  /* font-family: 'Spartan' ; */
+  font-family: 'Oxanium' !important;
+  /* font-family: 'Caveat' !important;  */
 }
 .has-same-height .card {
   height: 320px;
@@ -157,7 +151,7 @@ th {
   text-align: center;
   margin-top: 1em;
   margin-bottom: 3em;
-  border-top:1px solid rgb(43, 39, 39);  
+  border-top:1px solid rgb(184, 179, 179);  
 }
 
 </style>

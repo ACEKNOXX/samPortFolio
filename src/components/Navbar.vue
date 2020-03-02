@@ -1,7 +1,7 @@
 <template>
   <div >
     <!-- Navigation bar -->
-  <nav class="navbar has-background-black-bis  is-fixed-top">
+  <nav class="navbar   is-fixed-top">
     <div class="navbar-brand">
       <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
         <span></span>
@@ -10,7 +10,7 @@
       </div>
     </div>
 
-    <div id="navbarExampleTransparentExample" class="navbar-menu">
+    <!-- <div id="navbarExampleTransparentExample" class="navbar-menu">
       <div class="navbar-end">
         <a class="navbar-item" href="#about">
           <span class="icon">
@@ -43,11 +43,11 @@
           <span>Contact</span>
         </a>
       </div>
-    </div>
+    </div> -->
   </nav>
 
   <!-- Header -->
-  <section class="hero has-background-black-bis is-fullheight is-fullheight-with-navbar">
+  <section class="hero  is-fullheight is-fullheight-with-navbar">
     <div class="hero-body">
       <div class="container has-text-grey-lighter">
         <br>
@@ -63,17 +63,20 @@
             </div> -->
           </div>
           <div class="column left">
-              <h6 class="subtitle is-6 has-text-grey-lighter ">Hello! I am</h6>
-              <h1 class="title is-1 has-text-danger">
+              <h6 class="subtitle is-6 has-text-black-ter ">Hello! I am</h6>
+              <h1 class="title is-1 has-text-ter">
               Samuel Okediji 
               </h1>
-              <h2 class="subtitle is-3 has-text-grey-lighter ">
-              Full Stack Software Engineer
+              <h2 class="subtitle is-3 has-text-black-bis">
+              Software Engineer
               </h2>
+              <h4 class="subtitle is-6 has-text-black-bis">
+                <i class="material-icons medium has-text-danger">location_on</i>Lagos,Nigeria
+              </h4>
               <br><br><br><br>
-              <div class="colums">
+              <div class="">
                 <h6>
-                    <a href="#portfolio" class="has-text-primary">
+                    <a href="#portfolio" class="has-text-link">
                     See my works...
                         <span class="icon"><br>
                             <i class="material-icons small">trending_flat</i>
@@ -119,7 +122,7 @@ export default {
   background-repeat: no-repeat;
   background-size:cover;
   background-position:left center;
-  border:9px solid  #333;
+  border:9px solid  #eee;
 }
 .left{
   text-align:right !important;
