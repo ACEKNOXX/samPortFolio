@@ -2,7 +2,7 @@
   <div id="app" class="has-background-black-ter">
     <Navbar />
     <Services v-bind:skills="skill" />
-    <About />
+    <About v-bind:exps="experience" v-bind:voluntary="volunteryWorks" v-bind:award="awards"/>
     <Portfolio />
     <Contact />
     <Footer />
@@ -30,8 +30,60 @@ export default {
           details:"Html/Css/JS/ReactJS"
         },
         {
-          title:"Web ",
-          details:"Html/Css/JS"
+          title:"Web Backend",
+          details:"NodeJS, Python, REST API with Flask"
+        },
+        {
+          title:"Sys Admin",
+          details:"Systems Troubleshooting, Linux, Network integration"
+        },
+        {
+          title:"DevRel/Support",
+          details:"Technical writing, Customer Success Manager, Content developer, Customer Support, Zendesk"
+        },
+        {
+          title:"Cloud",
+          details:": GCP & Azure"
+        },
+        {
+          title:"Cloud Infrastructure",
+          details:"Kubernetes, Rancher, Ansible"
+        },  
+      ],
+      experience:[
+        {
+           title:"Unitech Global Resource (NG, SA)",
+           role:"Telecoms Support Engineer (NYSC)",
+           timeSpan:"AUG. 2019 - PRESENT "
+        },
+        {
+           title:"Urbane Aires",
+           role:" Digital Media Associate ",
+           timeSpan:"JAN. 2018 - JUN. 201 "
+        },
+      ],
+      volunteryWorks:[
+        {
+           title:"Trello Community Manager",
+           role:"Lekki Trello Events ",
+           timeSpan:"JAN .2020-Present  "
+        },
+        {
+           title:"Google Developer Group Ajah (GDG AJAH)",
+           role:"Google IT Support Certification",
+           timeSpan:"Present"
+        },
+        {
+           title:"Google Developer Group Ajah (GDG AJAH)",
+           role:"Organizer",
+           timeSpan:"FEB.2017 - DEC. 2019 "
+        }
+      ],
+      awards:[
+        {
+          title:"NAIJAHACKS 2018 HACKATHON",
+          role:"Winner",
+          timeSpan:"OCT.2018"
         }
       ]
     }
@@ -44,12 +96,15 @@ export default {
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 @import "https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css"; 
 @import url('https://fonts.googleapis.com/css?family=Caveat|Oxanium|Spartan|Tajawal&display=swap');
-#app {
+@import url('https://fonts.googleapis.com/css?family=Rajdhani&display=swap');
+
+#app,button {
   /* font-family: Avenir, Helvetica, Arial, sans-serif;
   font-family: 'Spartan', ;
   font-family: 'Oxanium', ;
   font-family: 'Caveat', ; */
-  font-family: 'Tajawal', ;
+  /* font-family: 'Tajawal', ; */
+   font-family: 'Rajdhani' !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
  
@@ -101,7 +156,7 @@ th {
 .section-heading {
   text-align: center;
   margin-top: 1em;
-  margin-bottom: 6em;
+  margin-bottom: 3em;
   border-top:1px solid rgb(43, 39, 39);  
 }
 

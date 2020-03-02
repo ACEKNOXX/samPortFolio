@@ -50,27 +50,40 @@
   <section class="hero has-background-black-bis is-fullheight is-fullheight-with-navbar">
     <div class="hero-body">
       <div class="container has-text-grey-lighter">
-          <div class="round-head-shot"></div>
-          <!-- <img src="../assets/logo.png" alt=""> -->
-          <h6 class="subtitle is-6 has-text-grey-lighter ">Hello! I am</h6>
-        <h1 class="title is-1 has-text-danger">
-          Samuel Okediji 
-        </h1>
-        <h2 class="subtitle is-3 has-text-grey-lighter ">
-          Full Stack Software Engineer
-        </h2>
-        <br><br><br><br>
-        <div class="colums">
-            <h6>
-                <a href="#portfolio" class="has-text-primary">
-                See my works...
-                    <span class="icon"><br>
-                        <i class="material-icons small">trending_flat</i>
-                    </span>
-                </a>
-            </h6>
-            
-            <!-- <img src="../assets/undraw_researching.svg" width="250px" height="250px" alt="PLay image"> -->
+        <br>
+        <div class="columns">
+
+          <div class="column">
+            <div class="round-head-shot"></div>
+            <!-- <div class="is-full columns">
+              <a href="#" class=""> <i class="fab fa-medium fa-2x"></i> </a>
+              <a href="#"> <i class="fab fa-twitter"></i> </a>
+              <a href="#"> <i class="fab fa-github-alt"></i> </a>
+              <a href="#"> <i class="fab fa-linkedin-in"></i> </a>
+            </div> -->
+          </div>
+          <div class="column left">
+              <h6 class="subtitle is-6 has-text-grey-lighter ">Hello! I am</h6>
+              <h1 class="title is-1 has-text-danger">
+              Samuel Okediji 
+              </h1>
+              <h2 class="subtitle is-3 has-text-grey-lighter ">
+              Full Stack Software Engineer
+              </h2>
+              <br><br><br><br>
+              <div class="colums">
+                <h6>
+                    <a href="#portfolio" class="has-text-primary">
+                    See my works...
+                        <span class="icon"><br>
+                            <i class="material-icons small">trending_flat</i>
+                        </span>
+                    </a>
+                </h6>
+                
+                <!-- <img src="../assets/undraw_researching.svg" width="250px" height="250px" alt="PLay image"> -->
+              </div>
+          </div>        
         </div>
       </div>
       
@@ -107,5 +120,8 @@ export default {
   background-size:cover;
   background-position:left center;
   border:9px solid  #333;
+}
+.left{
+  text-align:right !important;
 }
 </style>
