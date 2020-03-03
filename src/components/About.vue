@@ -1,103 +1,45 @@
-
-
-
 <template>
-  <div >
-    <section class="section " id="about">
-      
-      <div class="container">
-        <div class="section-heading">
-          <h3 class="title is-2 has-text-black-bis sub-headings">Personal Info</h3>
-        </div>
-        <!-- <Services v-bind:skills="skillS" /> -->
-        <!--sKILLS  -->
-        <h3 class="title is-5 has-text-link sub-headings">Skills</h3>
-        <div class="columns">
-          <div v-for="(skill,index) in skills" v-bind:key="skill" class="column  has-text-black-ter kills">
-            <strong class=" has-text-black-bis">{{index+1}}.{{skill.title}}:</strong> {{skill.details}}.
+    <div>
+      <section class="section has-background-black-bis " id="services">
+        
+        <div class="container">
+          <div class="section-heading">
+            <h3 class="title is-2 has-text-grey-lighter sub-headings">About Me</h3>
+          </div>
+          <div class="section-body-foot">
+            <div class="columns">             
+              <article class="column is-full has-text-grey-lighter">
+                
+                <p>
+                  Hi I'm <span class=" has-text-danger">Samuel Okediji.</span> A software engineer 
+                  based in Lagos. I am a seasoned and experience web developer, who has made differences with my 
+                  expertise at writing frontend applications with intermediate proficiency in React and also 
+                  developing and managing backend applications with NodeJS (AdonisJS), Python (Flask). I also double as a DevOps 
+                  Engineer with a lot of fancy for GCP, and 4 years experience working with Microsoft Azure.</p>
+                <p>
+                  Off work, I am mostly called a man with a heart for people. I engage 
+                  in  various volunteering and community programs. It's either you remember 
+                  me from my time in organizing and leading meetups or  workshop classes on 
+                  the platform of GDG Ajah. I also volunteer in organizing 
+                  Bootcamps and meetups with  FSD Lagos  (Fullstack Developers Lagos) Community.
+                </p>
+              </article>
+              
+            </div>
             
           </div>
-          
-        </div>
-        <!-- EXPERIENCE Section -->
-        <h3 class="title is-5 has-text-link sub-headings">Experience</h3>
-        <div class="columns">
-          
-          <div v-for="(exp,index) in exps" v-bind:key="exp" class="column  kills">
-            <p>
-            <strong class=" has-text-black-bis">
-              {{index+1}}.{{exp.title}}:
-              </strong> 
-              {{exp.role}}. 
-              <small>
-                ({{exp.timeSpan}}).
-              </small>
-              
-            </p>
-          </div>
-        </div>
 
-        <!-- VOLUNTEERING AND COMMUNITY SERVICES  -->
-        <h3 class="title is-5 has-text-link  sub-headings">VOLUNTEERING AND COMMUNITY SERVICES</h3>
-        <div class="columns">
-          
-          <div v-for="( work,index) in  voluntary" v-bind:key="work" class="column  kills">
-            <p>
-            <strong class=" has-text-black-bis">
-              {{index+1}}.{{work.title}}:
-              </strong> 
-              {{work.role}}. >>>
-              <small>
-                ({{work.timeSpan}}).
-              </small>
-              
-            </p>
-          </div>
         </div>
-
-      <!-- Award  -->
-        <h3 class="title is-5 has-text-link sub-headings">AWARD</h3>
-        <div class="columns">
-          
-          <div v-for="( award,index) in  award" v-bind:key="award" class="column kills">
-            <p>
-            <strong class=" has-text-black-bis">
-              {{index+1}}.{{award.title}}:
-              </strong> 
-              {{award.role}}. >>>
-              <small>
-                ({{award.timeSpan}}).
-              </small>
-              
-            </p>
-          </div>
-        </div>
-        
-        <a href="./assets/docs/resume.pdf" download target="_blank" class="button is-large is-link is-outlined">Download Resume <i class="material-icons">file_download</i></a>
-
-      </div>
-    </section>
-  </div>
+      </section>
+    </div>
 </template>
-
 <script>
-import Services from './Services';
-
 export default {
-  name: 'About',
-  componenyt:{
-    Services
-  },
-  props: {
-    exps:Array,
-    voluntary:Array,
-    award:Array,
-    skills:Array
-  }
+    name:'About',
+    props:{
+      skills:Array
+    }
 }
 </script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-
 </style>

@@ -1,15 +1,14 @@
 <template>
   <div id="app" class="">
     <Navbar />
-    <Services v-bind:skills="skill" />
-    <About v-bind:skills="skill" v-bind:exps="experience" v-bind:voluntary="volunteryWorks" v-bind:award="awards"/>
+    <About />
+    <Services v-bind:skills="skill" v-bind:exps="experience" v-bind:certificate="certifications" v-bind:award="awards"  />
     <Portfolio />
     <Contact />
     <Footer />
   </div>
 </template>
 
-<script src="https://kit.fontawesome.com/yourcode.js"></script>
 <script>
 import Navbar from './components/Navbar'
 import About from './components/About'
@@ -47,34 +46,43 @@ export default {
         },  
       ],
       experience:[
+        
         {
-           title:"Unitech Global Resource (NG, SA)",
-           role:"Telecoms Support Engineer (NYSC)",
-           timeSpan:"AUG. 2019 - PRESENT "
+           title:"GDG Ajah (meet-up) ",
+           role:"Organizer ",
+           timeSpan:"February 2018 -  Present",
+           link:"https://www.meetup.com/gdg-Ajah/"
         },
         {
-           title:"Urbane Aires",
-           role:" Digital Media Associate ",
-           timeSpan:"JAN. 2018 - JUN. 201 "
-        },
-      ],
-      volunteryWorks:[
-        {
-           title:"Trello Community Manager",
-           role:"Lekki Trello Events ",
-           timeSpan:"JAN .2020-Present  "
+           title:"Fullstack Developer Lagos Community (FSDLagos meet-up & Bootcamp) ",
+           role:" Co-organizer",
+           timeSpan:"February 2019 - Present",
+           link:"https://fsdlagos.com.ng"
         },
         {
-           title:"Google Developer Group Ajah (GDG AJAH)",
-           role:"Organizer",
-           timeSpan:"FEB.2017 - DEC. 2019 "
-        }
+           title:"Lekki Trello Events",
+           role:"Trello and Atlassian product user group - Co-organizer ",
+           timeSpan:"Jan 2019 - Present ",
+           link:" https://ace.atlassian.com/lekki-trello-events/"
+        },{
+           title:"TechGen Talent Lab",
+           role:" A 14 weeks software development bootcamp. Training Facilitator ",
+           timeSpan:"Sept 2019 - Dec 2019 "
+        },
+       
       ],
       awards:[
         {
           title:"NAIJAHACKS 2018 HACKATHON",
           role:"Winner",
           timeSpan:"OCT.2018"
+        }
+      ],
+      certificate:[
+        {
+          title:"Google IT Supports Professional Certificate",
+          role:"",
+          timeSpan:"Jan 2020"
         }
       ]
     }
@@ -95,7 +103,7 @@ export default {
   font-family: 'Oxanium', ;
   font-family: 'Caveat', ; */
   /* font-family: 'Tajawal', ; */
-   font-family: 'Rajdhani' !important;
+   font-family: 'Rajdhani';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
  
@@ -151,7 +159,7 @@ th {
   text-align: center;
   margin-top: 1em;
   margin-bottom: 3em;
-  border-top:1px solid rgb(184, 179, 179);  
+  border-top:1px solid #333;  
 }
 
 </style>

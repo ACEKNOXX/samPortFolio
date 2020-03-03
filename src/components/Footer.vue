@@ -3,7 +3,7 @@
         <footer class="footer has-background-black-bis">
             <div class="section">
                 <p class="has-text-grey-lighter">
-                    <strong>Created</strong> by <a href="#" class=" has-text-link">Aceknoxxicecode</a>. Copyright Samuel Okediji 2020
+                    <strong>Copyright</strong> by <a href="#" class=" has-text-danger">Samuel Okediji</a>.   2020
                 </p>
             </div>
         </footer>
