@@ -2,9 +2,9 @@
   <div id="app" class="">
     <Navbar />
     <About />
-    <Services v-bind:skills="skill" v-bind:exps="experience" v-bind:certificate="certifications" v-bind:award="awards"  />
+    <Services v-bind:cert="certificate" v-bind:skills2="skill2" v-bind:skills="skill" v-bind:exps="experience"  v-bind:award="awards"  />
     <Portfolio />
-    <Contact />
+    <Contact v-bind:social="socials" />
     <Footer />
   </div>
 </template>
@@ -45,6 +45,20 @@ export default {
           details:"Google IT Support Certification",
         },  
       ],
+      skill2:[
+      
+       {
+          title:"Data",
+          details:"SQL, BigQuery for Data Analytics"
+       }, {
+          title:"Streaming",
+          details:"Kafka, Hadoop, and GCP Cloud Dataflow"
+       },
+        {
+          title:"Cloud",
+          details:"GCP & Azure"
+       }
+      ],
       experience:[
         
         {
@@ -84,7 +98,25 @@ export default {
           role:"",
           timeSpan:"Jan 2020"
         }
-      ]
+      ],
+      socials:[
+        {
+          email:"samokediji@gmail.com"
+        },
+        {
+          medium:"https://medium.com/@Samuelokediji",
+        },
+        {
+          Linkedin:"https://www.linkedin.com/in/okedijisamuelolaide/"
+        },
+        {
+          Twitter:"https://twitter.com/SamuelOkediji_"
+        },
+        {
+          Github:"https://github.com/Samuelokediji"
+        }
+       
+      ],
     }
   }
 }
@@ -114,6 +146,9 @@ h1{
 font-family: 'Spartan' ;
   /* font-family: 'Oxanium', ; */
   /* font-family: 'Caveat', ;  */
+}
+p{
+  font-size:20px;
 }
 .sub-headings{
   text-align:left !important;

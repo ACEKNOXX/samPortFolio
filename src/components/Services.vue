@@ -11,8 +11,21 @@
         <h3 class="title is-5 has-text-grey-lighter sub-headings">Skills</h3>
         <div class="columns">
           <div v-for="(skill,index) in skills" v-bind:key="skill" class="column  has-text-grey-lighter kills">
-            <strong class=" has-text-danger">{{index+1}}.{{skill.title}}:</strong> {{skill.details}}.
+            <p>
             
+            <strong class=" has-text-danger">{{index+1}}.{{skill.title}}:</strong> {{skill.details}}.
+              
+            </p>
+          </div>
+          
+        </div>
+        <div class="columns">
+          <div v-for="(skill,index) in skills2" v-bind:key="skill" class="column  has-text-grey-lighter kills">
+            <p>
+            
+            <strong class=" has-text-danger">{{index+6}}.{{skill.title}}:</strong> {{skill.details}}.
+              
+            </p>
           </div>
           
         </div>
@@ -33,20 +46,20 @@
             </p>
           </div>
         </div>
-
+        
         <!-- Certifications -->
         <h3 class="title is-5 has-text-grey-lighter sub-headings">CERTIFICATION</h3>
         <div class="columns">
-          <div v-for="(cert,index) in certifications" v-bind:key="cert" class="column has-text-grey-lighter  kills">
+          <div v-for="(cer,index) in cert" v-bind:key="cer" class="column has-text-grey-lighter  kills">
             <p>
             <strong class=" has-text-danger">
-              {{index+1}}.{{cert.title}}:
+              {{index+1}}.{{cer.title}}:
               </strong> 
-              {{cert.role}}. 
+              {{cer.role}}. 
               <small>
-                ({{cert.timeSpan}}).
+                ({{cer.timeSpan}}).
               </small>
-               <a v-if="cert.link" class="has-text-primary" v-bind:href="cert.link">Ckeck</a>
+               <a v-if="cer.link" class="has-text-primary" v-bind:href="cer.link">Check</a>
             </p>
           </div>
         </div>
@@ -69,6 +82,7 @@
           </div>
         </div>
         
+        
         <a href="./assets/docs/resume.pdf" download target="_blank" class="button is-medium is-danger is-outlined">Download Resume <i class="material-icons">file_download</i></a>
 
       </div>
@@ -86,9 +100,11 @@ export default {
   },
   props: {
     exps:Array,
-    certi:Array,
+    cert:Array,
     award:Array,
-    skills:Array
+    skills:Array,
+    skills2:Array
+
   }
 }
 </script>
