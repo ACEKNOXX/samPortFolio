@@ -2,7 +2,7 @@
   <div id="app" class="">
     <Navbar />
     <About />
-    <Services v-bind:cert="certificate" v-bind:skills2="skill2" v-bind:skills="skill" v-bind:exps="experience"  v-bind:award="awards"  />
+    <Services v-bind:cert="certificate" v-bind:skills2="skill2" v-bind:skills="skill" v-bind:exps="experience" v-bind:exps2="experience2"  v-bind:award="awards"  />
     <Portfolio />
     <Contact v-bind:social="socials" />
     <Footer />
@@ -85,6 +85,23 @@ export default {
         },
        
       ],
+      experience2:[
+        
+        {
+           title:"Unitech Global Resource NG,SA",
+           role:"Telecomm support Engineer ",
+           timeSpan:"August 2019 -  Present",
+           link:"https://www.uniglobal.net/"
+        },
+        {
+           title:"Uraban Aires ",
+           role:"Digital Media Associate ",
+           timeSpan:"JAN. 2018 - JUN. 2019 ",
+           link:"http://urbane.ariesmoda.com"
+        },
+
+       
+      ],
       awards:[
         {
           title:"NAIJAHACKS 2018 HACKATHON",
@@ -128,7 +145,9 @@ export default {
 @import "https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css"; 
 @import url('https://fonts.googleapis.com/css?family=Caveat|Oxanium|Spartan|Tajawal&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Rajdhani&display=swap');
-
+html {
+  scroll-behavior: smooth !important;
+}
 #app,button {
   /* font-family: Avenir, Helvetica, Arial, sans-serif;
   font-family: 'Spartan', ;

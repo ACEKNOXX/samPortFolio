@@ -30,10 +30,26 @@
           
         </div>
         <!-- EXPERIENCE Section -->
-        <h3 class="title is-5 has-text-grey-lighter sub-headings">Experience</h3>
+        <h3 class="title is-5 has-text-grey-lighter sub-headings">Community and Volunteering Service.</h3>
         <div class="columns">
           
           <div v-for="(exp,index) in exps" v-bind:key="exp" class="column has-text-grey-lighter  kills">
+            <p>
+            <strong class=" has-text-danger">
+              {{index+1}}.{{exp.title}}:
+              </strong> 
+              {{exp.role}}. 
+              <small>
+                ({{exp.timeSpan}}).
+              </small>
+               <a v-if="exp.link" class="has-text-primary" v-bind:href="exp.link">Ckeck</a>
+            </p>
+          </div>
+        </div>
+        <h3 class="title is-5 has-text-grey-lighter sub-headings">Experience</h3>
+        <div class="columns">
+          
+          <div v-for="(exp,index) in exps2" v-bind:key="exp" class="column has-text-grey-lighter  kills">
             <p>
             <strong class=" has-text-danger">
               {{index+1}}.{{exp.title}}:
@@ -100,6 +116,7 @@ export default {
   },
   props: {
     exps:Array,
+    exps2:Array,
     cert:Array,
     award:Array,
     skills:Array,
